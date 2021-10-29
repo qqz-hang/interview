@@ -1,0 +1,218 @@
+1.	/**
+	 * 把字符数组，转化为一个字符
+	 *
+	 * @param seperator
+	 *            字符分隔符
+	 * @param strings
+	 *            数组对象
+	 * @return 字符串
+	 */
+	public static String join(String seperator, String[] strings)
+
+2.	/**
+	 * 把两个字符串数组的元素用分隔符连接，生成新的数组，生成的数组以第一个字符串数组为参照，与其长度相同。
+	 *
+	 * @param x
+	 *            字符串数组
+	 * @param seperator
+	 *            分隔符
+	 * @param y
+	 *            字符串数组
+	 * @return 组合后的字符串数组
+	 */
+	public static String[] add(String[] x, String seperator, String[] y)
+
+3.	/**
+	 * 字符串替换处理，把旧的字符串替换为新的字符串，主要是通过字符串查找进行处理（不使用String中replace或者replaceAll方法）
+	 * @param source
+	 *            需要进行替换的字符串
+	 * @param old
+	 *            需要进行替换的字符串
+	 * @param replace
+	 *            替换成的字符串
+	 * @return 替换处理后的字符串
+	 */
+	public static String replace(String source, String old, String replace) 
+
+4.	/**
+	 * 替换字符，如果指定进行全替换，必须设wholeWords=true，否则只替换最后出现的字符。
+	 *
+	 * @param template
+	 *            字符模板
+	 * @param placeholder
+	 *            需要替换的字符
+	 * @param replacement
+	 *            新的字符
+	 * @param wholeWords
+	 *            是否需要全替换，true为需要，false为不需要。如果不需要，则只替换最后出现的字符。
+	 * @return 替换后的新字符
+	 */
+	public static String replace(String template, String placeholder, String replacement, boolean wholeWords)
+
+
+5.	/**
+	 * 替换字符，只替换第一次出现的字符串。
+	 *
+	 * @param template
+	 *            字符模板
+	 * @param placeholder
+	 *            需要替换的字符串
+	 * @param replacement
+	 *            新字符串
+	 * @return 替换后的字符串
+	 */
+	public static String replaceOnce(String template, String placeholder, String replacement)
+
+6.	/**
+	 * 把数组中的所有元素出现的字符串进行替换，把旧字符串替换为新字符数组的所有元素，只替换第一次出现的字符。
+	 *
+	 * @param strings
+	 *            需要替换的数组
+	 * @param placeholder
+	 *            需要替换的字符串
+	 * @param replacements
+	 *            新字符串数组
+	 * @return 替换后的字符串数组
+	 */
+	private static String[] multiply(String[] strings, String placeholder, String[] replacements)
+
+7.	/**
+	 * 描述：计算字符串中未引用的字符
+	 * 
+	 * @param string
+	 *            字符串
+	 * @param character
+	 *            字符
+	 * @return 未引用的字符数
+	 */
+	public static int countUnquoted(String string, char character)
+
+8.	/**
+	 * 向字符串添加上前缀，并以.作为分隔符
+	 *
+	 * @param name
+	 *            需要添加前缀的字符串
+	 * @param prefix
+	 *            前缀
+	 * @return 添加前缀后的字符串
+	 */
+	public static String qualify(String name, String prefix)
+
+
+9.	/**
+	 * 向字符串数组中的所有字符添加上前缀，前以点作为分隔符
+	 *
+	 * @param names
+	 *            字符串数组
+	 * @param prefix
+	 *            前缀
+	 * @return 添加前缀后的字符串数组
+	 */
+	public static String[] qualify(String[] names, String prefix) 
+
+
+10.	/**
+	 * 从字符串中提取指字长度的字符。区分中英文。<br>
+	 * 如果需要加省略号，则将在指定长度上少取3个字符宽度，末尾加上"......"。
+	 *
+	 * @param string
+	 *            字符串
+	 * @param length
+	 *            要取的字符长度，此为中文长度，英文仅当作半个字符。
+	 * @param appendSuspensionPoints
+	 *            是否需要加省略号
+	 * @return 提取后的字符串
+	 */
+	public static String truncate(String string, int length, boolean appendSuspensionPoints)
+
+11.	/**
+	 * 去除字符串中的最后字符
+	 *
+	 * @param str
+	 *            原字符串
+	 * @param strMove
+	 *            要去除字符 比如","
+	 * @return 去除后的字符串
+	 */
+	public static String lastCharTrim(String str, String strMove) 
+
+12.	/**
+	 * 判断是否为整数
+	 * 
+	 * @param str
+	 *            传入的字符串
+	 * @return 是整数返回true,否则返回false
+	 */
+	public static boolean isInteger(String str)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

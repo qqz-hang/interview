@@ -1,0 +1,39 @@
+1.String ,StringBuilder,StringBuffer的区别，为什么？final char[]
+	string:不可变字符序列,
+	StringBuffer：字符串变量，线程安全，效率低。适用多线程下在字符缓冲区进行大量操作的情况。
+	StringBulider：字符串变量，线程不安全，效率高。适用于单线程下在字符缓冲区进行大量操作
+2.HashMap底层用到哪些数据结构，为什么要使用到这些数据结构？		
+	1.8之前使用的链表和数组  1.8之后用的数组,链表和红黑树     不同key的hash不同,当相同时用链表   链表太长,用红黑树查询快 (二分查找)   
+3.所5种常用设计模式，在你用过的哪个框架中有用到这 5 种设计模式？
+	单例(bean)  工厂(ioc创建bean)   建造者(builder) 适配器(xxxadapter)  装饰(buffer    包装类)   代理(aop动态代理)   观察者(licencer)   模板()
+4.==和equals比较基本类型，比较对象有什么区别，
+   比较基本类型用什么哪个，比较包装类型用什么，	比较对象用什么，比较BigDecimal用什么，如何实现对象的自定义比较方式？
+			e		地址值(==)  值()	compare(比较数值)		e
+5.HashMap和HashTable的区别，为什么有这些区别，在多线程中如何使用HashMap(不要定义成员变量)？
+	相同点：
+    		 实现原理相同，功能相同，底层都是哈希表结构，查询速度快，在很多情况下可以互用
+   	 不同点：
+     		 1、Hashtable是早期提供的接口，HashMap是新版JDK提供的接口。
+    		  2、Hashtable继承Dictionary类，HashMap实现Map接口。
+     		 3、Hashtable线程安全，HashMap线程非安全。 因为它的remove,put，get做成了同步方法，保证了Hashtable的线程安全性。
+     		 4、Hashtable不允许null值，HashMap允许null值。 收起  
+
+
+6.JSP原理
+		JSP是Servlet的扩展,JSP没出现之前,就已经出现了Servlet技术.Servlet是利用了"输出流",动态的生成了HTML页面。JSP引擎将生成的Servlet代码编译成Class文件。服务	器执行这个Class文件。最后服务器将执行结果发送给浏览器进行显示。
+7. forward与redirect的区别
+	 forward：转发 ：浏览器不感知 ，url地址栏不变 ，request中属性可用 。
+   	redirect:  重定向：浏览器感知-重新发起请求，url地址栏改变，request中属性不可用。
+8.session和cookie是什么关系，有什么区别(浏览器和服务器之间)
+	每个用户访问服务器都会建立一个session，那服务器是怎么标识用户的唯一身份呢？事实上，用户与服务器建立连接的同时，服务器会自动为其分配一个SessionId。
+	数据储存位置  安全性   服务器性能   数据大小   信息重要性
+9.PreparedStatement相比Statement的好处
+	a. 继承自Statement接口（意味着功能相对更加全面）；
+	b. 带有预编译的特性；
+	c. 批量处理sql语句；
+	d. 处理带未知参数的sql语句；
+	e. 具有安全性，即可以防止恶意的sql语句注入攻击；
+	f. 在处理单条语句上，执行效率没有Statement快；
+	g. 提高程序的可读性和可维护性。
+10.Get/post区别
+	
